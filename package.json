@@ -1,7 +1,7 @@
 {
   "name": "ge",
   "description": "Generate code, config files, or anything you want! ",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "url": "https://github.com/ricardo-rossi/ge",
   "keywords": [
     "generate",
@@ -25,7 +25,8 @@
     "metalsmith-metadata": "0.0.1",
     "underscore": "~1.7.0",
     "underscore.string": "~2.3.3",
-    "minimist": "~1.1.0"
+    "minimist": "~1.1.0",
+    "optimist": ">=0.3.4"
   },
   "devDependencies": {
     "gulp": "^3.8.6",
@@ -44,5 +45,9 @@
   },
   "homepage": "https://github.com/ricardo-rossi/ge",
   "main": "./generate.js",
+  "preferGlobal": "true",
+  "bin": {
+    "ge": "./bin/cli.js"
+  },
   "license": "MIT"
 }
