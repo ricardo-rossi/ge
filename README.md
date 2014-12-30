@@ -4,8 +4,6 @@ Generate code, config files, or anything you want!
 
 [![NPM](https://nodei.co/npm/ge.png?downloads=true)](https://nodei.co/npm/ge/)  
 [![NPM version](https://badge.fury.io/js/ge.svg)](http://badge.fury.io/js/ge)
-[![dependencies](https://david-dm.org/ricardo-rossi/ge.png)](https://david-dm
-.org/ricardo-rossi/ge)
 [![Travis](https://travis-ci.org/ricardo-rossi/ge.svg?branch=master)](https://travis-ci
 .org/ricardo-rossi/ge)
 
