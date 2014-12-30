@@ -1,7 +1,7 @@
 {
   "name": "ge",
   "description": "Generate code, config files, or anything you want! ",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "url": "https://github.com/ricardo-rossi/ge",
   "keywords": [
     "generate",

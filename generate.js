@@ -41,7 +41,7 @@ if (templateName) {
   }
   configPath = templatePath + path.sep + configFile;
   if (fs.existsSync(configPath)) {
-    config = require(configPath);
+    config = require(process.cwd() + path.sep + configPath);
   }
   if (!config) {
     console.error('Configuration file not found in ' + configPath);
@@ -95,7 +95,7 @@ function yamlPlugin() {
  * Generate code
  */
 function run(done) {
-  new Metalsmith(__dirname)
+  new Metalsmith('.')
     .source(templatePath)
     .use(templates({
       engine: 'handlebars',

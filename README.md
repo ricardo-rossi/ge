@@ -37,10 +37,10 @@ npm install -g ge
 ## Usage
 
 ```
-ge -t /path/to/template
+ge -t relative/path/to/template
 ```
 
-Generated files will be placed under the ./build directory  
+Generated files will be placed under ./build relative to your current dir.
 
 
 ## Examples
@@ -50,15 +50,15 @@ Please see some example templates in the /samples directory
 
 ## Running The Examples
 
-Copy the /samples to your current directory and run any of the examples like this:
+Copy the /samples folder to your current directory and run any of the examples like this:
 
 ```
-ge -t ./samples/1_hello
-ge -t ./samples/2_filename
-ge -t ./samples/3_filename_var
-ge -t ./samples/4_helper
-ge -t ./samples/5_iterator
-ge -t ./samples/6_conditional
+ge -t samples/1_hello
+ge -t samples/2_filename
+ge -t samples/3_filename_var
+ge -t samples/4_helper
+ge -t samples/5_iterator
+ge -t samples/6_conditional
 ```
 
 The generated files will be placed under the ./build directory (relative to your current dir)
