@@ -22,9 +22,7 @@ var argv = require('minimist')(process.argv.slice(2));
 /*
  * Local variables
  */
-var genDir = 'generators';
 var configFile = 'config.json';
-var genPath = './' + path.sep + genDir;
 var buildPath = './build';
 var varDelimiter = '$';
 var templateName = argv.t;
@@ -36,7 +34,7 @@ var fileNames = [];
  * CLI parameters
  */
 if (templateName) {
-  var templatePath = genPath + path.sep + templateName;
+  var templatePath = './' + path.sep + templateName;
   if (!fs.existsSync(templatePath)) {
     console.error('Template not found in ' + templatePath);
     process.exit();
@@ -50,7 +48,7 @@ if (templateName) {
     process.exit();
   }
 } else {
-  console.error('Specify template name using -t [template]');
+  console.error('Specify template name using "ge -t /path/to/template"');
   process.exit();
 }
 
@@ -111,7 +109,8 @@ function run(done) {
         throw err;
       }
       cleanUp();
-      console.log('Code generated using template: ' + templateName + '\n');
+      console.log('Code generated using template: ' + templateName);
+      console.log('See output under: ' + buildPath + '\n');
       done();
     });
 }
