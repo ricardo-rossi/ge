@@ -2,6 +2,17 @@
   "name": "ge",
   "description": "Generate code, config files, or anything you want! ",
   "version": "0.0.1",
+  "url": "https://github.com/ricardo-rossi/ge",
+  "keywords": [
+    "generate",
+    "generator",
+    "code",
+    "template",
+    "scafolding",
+    "build",
+    "metalsmith",
+    "handlebars"
+  ],
   "author": {
     "name": "Ricardo Rossi",
     "email": "rrossi@endata.com"
@@ -25,8 +36,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ricardo-rossi/ge.git"
+    "url": "https://github.com/ricardo-rossi/ge"
   },
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/ricardo-rossi/ge/issues"
+  },
+  "homepage": "https://github.com/ricardo-rossi/ge",
   "main": "./generate.js",
   "license": "MIT"
 }
