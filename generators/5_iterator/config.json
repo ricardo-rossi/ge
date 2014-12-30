@@ -1,0 +1,14 @@
+{
+  "class": "User",
+  "package": "com.company.api.entity",
+  "fields": [
+    {
+      "name": "name",
+      "type": "String"
+    },
+    {
+      "name": "loc",
+      "type": "String"
+    }
+  ]
+}

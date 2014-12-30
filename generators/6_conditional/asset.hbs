@@ -1,0 +1,23 @@
+---
+filename: $class$Asset.java
+---
+package {{package}};
+
+import java.util.Collection;
+import com.company.domain.Asset;
+import com.company.domain.code.CodeValue;
+import com.company.util.CollectionOf;
+import com.company.util.Definition;
+import com.company.util.Sample;
+
+public class {{toTitleCase class}} extends Asset {
+
+{{#each fields}}
+{{#if array}}
+  public {{array}}<{{type}}> {{name}};
+{{else}}
+  public {{type}} {{name}};
+{{/if}}
+
+{{/each}}
+}

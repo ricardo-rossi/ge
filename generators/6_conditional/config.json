@@ -1,0 +1,20 @@
+{
+  "class": "User",
+  "output": "UserAsset.java",
+  "package": "com.company.api.entity",
+  "fields": [
+    {
+      "name": "name",
+      "type": "String"
+    },
+    {
+      "name": "loc",
+      "type": "String"
+    },
+    {
+      "name": "skills",
+      "array": "Collection",
+      "type": "CodeValue"
+    }
+  ]
+}
