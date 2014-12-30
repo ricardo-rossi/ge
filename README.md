@@ -45,7 +45,7 @@ Generated files will be placed under ./build relative to your current dir.
 
 ## Examples
 
-Please see some example templates in the /samples directory  
+Please see some template examples in the /samples directory  
 
 
 ## Running The Examples
