@@ -29,49 +29,40 @@ If you are having issues please see [How to install Node.js and npm](http://blog
 
 ## Getting Started  
 
+Install ge using the -g (global) flag   
 ```
-npm install
+npm install -g ge
 ```
 
 ## Usage
 
 ```
-gulp generate -t [template]
+ge -t /path/to/template
 ```
 
-Generated files will be placed under the /build directory  
+Generated files will be placed under the ./build directory  
 
 
 ## Examples
 
-See the list of example templates under the /generators directory  
+Please see some example templates in the /samples directory  
 
 
 ## Running The Examples
 
-```
-gulp generate -t 1_hello
-```
+Copy the /samples to your current directory and run any of the examples like this:
 
 ```
-gulp generate -t 2_filename
+ge -t ./samples/1_hello
+ge -t ./samples/2_filename
+ge -t ./samples/3_filename_var
+ge -t ./samples/4_helper
+ge -t ./samples/5_iterator
+ge -t ./samples/6_conditional
 ```
 
-```
-gulp generate -t 3_filename_var
-```
+The generated files will be places under the ./build directory
 
-```
-gulp generate -t 4_helper
-```
-
-```
-gulp generate -t 5_iterator
-```
-
-```
-gulp generate -t 6_conditional
-```
 
 ## Attributions
  
