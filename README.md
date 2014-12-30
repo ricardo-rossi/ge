@@ -61,7 +61,7 @@ ge -t ./samples/5_iterator
 ge -t ./samples/6_conditional
 ```
 
-The generated files will be places under the ./build directory
+The generated files will be placed under the ./build directory (relative to your current dir)
 
 
 ## Attributions

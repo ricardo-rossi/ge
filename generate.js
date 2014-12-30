@@ -34,7 +34,7 @@ var fileNames = [];
  * CLI parameters
  */
 if (templateName) {
-  var templatePath = './' + path.sep + templateName;
+  var templatePath = templateName;
   if (!fs.existsSync(templatePath)) {
     console.error('Template not found in ' + templatePath);
     process.exit();
